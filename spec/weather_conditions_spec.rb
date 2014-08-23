@@ -8,5 +8,4 @@ describe WeatherConditions do
 		check_weather = Weather.new
 		expect(["sunny", "stormy"]).to include(check_weather.weather_conditions)
 	end
-
 end

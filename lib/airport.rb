@@ -29,9 +29,4 @@ class Airport
 	def full?
 		plane_count == @capacity
 	end
-
-
-
-
-
 end

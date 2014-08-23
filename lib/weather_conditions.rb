@@ -4,6 +4,4 @@ module WeatherConditions
 		weather = %w(sunny sunny sunny sunny sunny sunny sunny stormy stormy stormy)
 		weather.sample
 	end
-	
-
 end
