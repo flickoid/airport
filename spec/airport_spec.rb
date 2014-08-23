@@ -41,7 +41,7 @@ describe Airport do
       100.times { airport.land(plane) }
       expect(airport).to be_full
       allow(airport).to receive(:weather_conditions).and_return("sunny")
-      expect(-> { airport.land(plane) }).to raise_error(RuntimeError)
+      expect(-> { airport.land(plane) }).to raise_error("Airport is full")
     end
     
     # Include a weather condition using a module.
