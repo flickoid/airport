@@ -5,7 +5,7 @@ class Airport
 	include WeatherConditions
 
 	def initialize
-		@capacity = 100
+		@capacity = 6
 		@planes = []
 	end
 

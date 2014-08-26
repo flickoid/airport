@@ -32,10 +32,10 @@ describe Airport do
     it 'a plane cannot land if the airport is full' do
       expect(airport).not_to be_full
       allow(airport).to receive(:weather_conditions).and_return("sunny")
-      100.times { airport.land(plane) }
+      6.times { airport.land(plane) }
       expect(airport).to be_full
       allow(airport).to receive(:weather_conditions).and_return("sunny")
-      expect(-> { airport.land(plane) }).to raise_error("Airport is full")
+      expect{ airport.land(plane) }.to raise_error("Airport is full")
     end
 
     context 'weather conditions' do
